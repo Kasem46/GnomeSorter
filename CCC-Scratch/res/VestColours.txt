@@ -1,0 +1,16 @@
+Red
+Orange
+Yellow
+Green
+Blue
+Violet
+Rainbow
+White
+Black
+Grey
+Pink
+Teal
+Brown
+Silver
+Gold
+Bronze
