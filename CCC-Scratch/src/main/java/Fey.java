@@ -36,25 +36,27 @@ public class Fey {
     
     private void initNames(){
         try{
-            Scanner input = new Scanner(new File("C://Users/Administrator//Documents//NetBeansProjects//CCC-Scratch//res//Names.txt"));
+            Scanner input = new Scanner(new File("res//Names.txt"));
             while(input.hasNextLine()){
                 names.add(input.nextLine().trim());
             }
             input.close();
         }catch(Exception e){
             System.out.println("Error reading or parsing Names.txt");
+            names.add("Error");
         }
     }
     
     private void initPies(){
         try{
-            Scanner input = new Scanner(new File("C://Users/Administrator//Documents//NetBeansProjects//CCC-Scratch//res//PieFlavours.txt"));
+            Scanner input = new Scanner(new File("res//PieFlavours.txt"));
             while(input.hasNextLine()){
                 pies.add(input.nextLine().trim());
             }
             input.close();
         }catch(Exception e){
             System.out.println("Error reading or parsing PieFlavours.txt");
+            pies.add("Error");
         }
     }
     

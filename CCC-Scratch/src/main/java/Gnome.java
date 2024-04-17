@@ -20,13 +20,14 @@ public class Gnome extends Fey implements Comparable<Gnome>{
     
     private void initColours(){
         try{
-            Scanner input = new Scanner(new File("C://Users/Administrator//Documents//NetBeansProjects//CCC-Scratch//res//VestColours.txt"));
+            Scanner input = new Scanner(new File("res//VestColours.txt"));
             while(input.hasNextLine()){
                 colours.add(input.nextLine().trim());
             }
             input.close();
         } catch(Exception e){
             System.out.println("Error reading or parsing VestColours.txt");
+            colours.add("Error");
         }
         
     }
